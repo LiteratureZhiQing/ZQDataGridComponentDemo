@@ -11,7 +11,7 @@ pod 'ZQDataGridComponent'
 
 #控件介绍
 #一张粗糙的结构图
-![image](https://github.com/LiteratureZhiQing/ZQDataGridComponentDemo/blob/master/%E8%A1%A8%E6%A0%BC%E7%BB%93%E6%9E%84.jpg)
+![image](https://github.com/LiteratureZhiQing/ZQDataGridComponentDemo/blob/master/%E8%A1%A8%E6%A0%BC%E7%BB%93%E6%9E%841.jpg)
 
 1、左上角红色视图为 leftHeadView 需要使用者自己一个view 添加进去
 
