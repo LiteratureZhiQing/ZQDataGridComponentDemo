@@ -3,7 +3,7 @@
 
 
 #效果图
-![image](https://github.com/ZhiQingLoving/ZQTagViewDemo/blob/master/tagview%E6%95%88%E6%9E%9C.gif)
+![image](https://github.com/LiteratureZhiQing/ZQDataGridComponentDemo/blob/master/%E8%A1%A8%E6%A0%BC.gif)
 
 
 #Pod 使用
