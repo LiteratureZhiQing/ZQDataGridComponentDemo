@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA39FF8F222F9AD400810EA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FF8E222F9AD400810EA8 /* AppDelegate.m */; };
+		CA39FF92222F9AD400810EA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FF91222F9AD400810EA8 /* ViewController.m */; };
+		CA39FF95222F9AD400810EA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39FF93222F9AD400810EA8 /* Main.storyboard */; };
+		CA39FF97222F9AD600810EA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA39FF96222F9AD600810EA8 /* Assets.xcassets */; };
+		CA39FF9A222F9AD600810EA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39FF98222F9AD600810EA8 /* LaunchScreen.storyboard */; };
+		CA39FF9D222F9AD600810EA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FF9C222F9AD600810EA8 /* main.m */; };
+		CA39FFA7222F9AD600810EA8 /* ZQDatagridComponentDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFA6222F9AD600810EA8 /* ZQDatagridComponentDemoTests.m */; };
+		CA39FFB2222F9AD600810EA8 /* ZQDatagridComponentDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFB1222F9AD600810EA8 /* ZQDatagridComponentDemoUITests.m */; };
+		CA39FFDA222F9BB000810EA8 /* ZQDataGridBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFC1222F9BB000810EA8 /* ZQDataGridBaseCellModel.m */; };
+		CA39FFDB222F9BB000810EA8 /* ZQDataGridRightTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFC4222F9BB000810EA8 /* ZQDataGridRightTableViewCellModel.m */; };
+		CA39FFDC222F9BB000810EA8 /* ZQDataGridHeadItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFC6222F9BB000810EA8 /* ZQDataGridHeadItemModel.m */; };
+		CA39FFDD222F9BB000810EA8 /* ZQDataGridComponentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFC7222F9BB000810EA8 /* ZQDataGridComponentModel.m */; };
+		CA39FFDE222F9BB000810EA8 /* ZQDataGridLeftTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFCA222F9BB000810EA8 /* ZQDataGridLeftTableViewCellModel.m */; };
+		CA39FFDF222F9BB000810EA8 /* ZQDataGridBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFCE222F9BB000810EA8 /* ZQDataGridBaseCell.m */; };
+		CA39FFE0222F9BB000810EA8 /* ZQDataGridRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFCF222F9BB000810EA8 /* ZQDataGridRightTableViewCell.m */; };
+		CA39FFE1222F9BB000810EA8 /* ZQDataGridLeftTabelViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFD4222F9BB000810EA8 /* ZQDataGridLeftTabelViewCell.m */; };
+		CA39FFE2222F9BB000810EA8 /* ZQDataGridHeadItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFD5222F9BB000810EA8 /* ZQDataGridHeadItemCell.m */; };
+		CA39FFE3222F9BB000810EA8 /* ZQDataGridComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFD7222F9BB000810EA8 /* ZQDataGridComponent.m */; };
+		CA39FFE5222F9BB000810EA8 /* ZQDataGridRowViewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFD9222F9BB000810EA8 /* ZQDataGridRowViewCollectionView.m */; };
+		CA39FFE8222F9D2A00810EA8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFE6222F9D2A00810EA8 /* UIView+Frame.m */; };
+		CA39FFED222FA72500810EA8 /* DataGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFEC222FA72500810EA8 /* DataGridViewController.m */; };
+		CA39FFF0222FB06400810EA8 /* NomalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFEF222FB06400810EA8 /* NomalCollectionViewCell.m */; };
+		CA39FFF3222FBE4800810EA8 /* myDataGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFF2222FBE4800810EA8 /* myDataGridView.m */; };
+		CA39FFF6222FC73000810EA8 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFF5222FC73000810EA8 /* CustomCollectionViewCell.m */; };
+		CA39FFF9222FC8DE00810EA8 /* CustomViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFF8222FC8DE00810EA8 /* CustomViewModel.m */; };
+		CA39FFFC222FCE7400810EA8 /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFFB222FCE7400810EA8 /* LeftTableViewCell.m */; };
+		CA39FFFF222FCF1600810EA8 /* LeftCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA39FFFE222FCF1600810EA8 /* LeftCellModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA39FFA3222F9AD600810EA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA39FF82222F9AD400810EA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA39FF89222F9AD400810EA8;
+			remoteInfo = ZQDatagridComponentDemo;
+		};
+		CA39FFAE222F9AD600810EA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA39FF82222F9AD400810EA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA39FF89222F9AD400810EA8;
+			remoteInfo = ZQDatagridComponentDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA39FF8A222F9AD400810EA8 /* ZQDatagridComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQDatagridComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA39FF8D222F9AD400810EA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA39FF8E222F9AD400810EA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA39FF90222F9AD400810EA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CA39FF91222F9AD400810EA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CA39FF94222F9AD400810EA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA39FF96222F9AD600810EA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA39FF99222F9AD600810EA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA39FF9B222F9AD600810EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA39FF9C222F9AD600810EA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA39FFA2222F9AD600810EA8 /* ZQDatagridComponentDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQDatagridComponentDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA39FFA6222F9AD600810EA8 /* ZQDatagridComponentDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQDatagridComponentDemoTests.m; sourceTree = "<group>"; };
+		CA39FFA8222F9AD600810EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA39FFAD222F9AD600810EA8 /* ZQDatagridComponentDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQDatagridComponentDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA39FFB1222F9AD600810EA8 /* ZQDatagridComponentDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQDatagridComponentDemoUITests.m; sourceTree = "<group>"; };
+		CA39FFB3222F9AD600810EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA39FFC1222F9BB000810EA8 /* ZQDataGridBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridBaseCellModel.m; sourceTree = "<group>"; };
+		CA39FFC2222F9BB000810EA8 /* ZQDataGridComponentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridComponentModel.h; sourceTree = "<group>"; };
+		CA39FFC3222F9BB000810EA8 /* ZQDataGridHeadItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridHeadItemModel.h; sourceTree = "<group>"; };
+		CA39FFC4222F9BB000810EA8 /* ZQDataGridRightTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridRightTableViewCellModel.m; sourceTree = "<group>"; };
+		CA39FFC5222F9BB000810EA8 /* ZQDataGridLeftTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridLeftTableViewCellModel.h; sourceTree = "<group>"; };
+		CA39FFC6222F9BB000810EA8 /* ZQDataGridHeadItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridHeadItemModel.m; sourceTree = "<group>"; };
+		CA39FFC7222F9BB000810EA8 /* ZQDataGridComponentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridComponentModel.m; sourceTree = "<group>"; };
+		CA39FFC8222F9BB000810EA8 /* ZQDataGridBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridBaseCellModel.h; sourceTree = "<group>"; };
+		CA39FFC9222F9BB000810EA8 /* ZQDataGridRightTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridRightTableViewCellModel.h; sourceTree = "<group>"; };
+		CA39FFCA222F9BB000810EA8 /* ZQDataGridLeftTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridLeftTableViewCellModel.m; sourceTree = "<group>"; };
+		CA39FFCC222F9BB000810EA8 /* ZQDataGridHeadItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridHeadItemCell.h; sourceTree = "<group>"; };
+		CA39FFCD222F9BB000810EA8 /* ZQDataGridLeftTabelViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridLeftTabelViewCell.h; sourceTree = "<group>"; };
+		CA39FFCE222F9BB000810EA8 /* ZQDataGridBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridBaseCell.m; sourceTree = "<group>"; };
+		CA39FFCF222F9BB000810EA8 /* ZQDataGridRightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridRightTableViewCell.m; sourceTree = "<group>"; };
+		CA39FFD0222F9BB000810EA8 /* ZQDataGridRowViewCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridRowViewCollectionView.h; sourceTree = "<group>"; };
+		CA39FFD2222F9BB000810EA8 /* ZQDataGridComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridComponent.h; sourceTree = "<group>"; };
+		CA39FFD3222F9BB000810EA8 /* ZQDataGridBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridBaseCell.h; sourceTree = "<group>"; };
+		CA39FFD4222F9BB000810EA8 /* ZQDataGridLeftTabelViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridLeftTabelViewCell.m; sourceTree = "<group>"; };
+		CA39FFD5222F9BB000810EA8 /* ZQDataGridHeadItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridHeadItemCell.m; sourceTree = "<group>"; };
+		CA39FFD6222F9BB000810EA8 /* ZQDataGridRightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQDataGridRightTableViewCell.h; sourceTree = "<group>"; };
+		CA39FFD7222F9BB000810EA8 /* ZQDataGridComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridComponent.m; sourceTree = "<group>"; };
+		CA39FFD9222F9BB000810EA8 /* ZQDataGridRowViewCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQDataGridRowViewCollectionView.m; sourceTree = "<group>"; };
+		CA39FFE6222F9D2A00810EA8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		CA39FFE7222F9D2A00810EA8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		CA39FFE9222F9E8000810EA8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CA39FFEA222FA07B00810EA8 /* DefineFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineFile.h; sourceTree = "<group>"; };
+		CA39FFEB222FA72500810EA8 /* DataGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataGridViewController.h; sourceTree = "<group>"; };
+		CA39FFEC222FA72500810EA8 /* DataGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataGridViewController.m; sourceTree = "<group>"; };
+		CA39FFEE222FB06400810EA8 /* NomalCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NomalCollectionViewCell.h; sourceTree = "<group>"; };
+		CA39FFEF222FB06400810EA8 /* NomalCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NomalCollectionViewCell.m; sourceTree = "<group>"; };
+		CA39FFF1222FBE4800810EA8 /* myDataGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myDataGridView.h; sourceTree = "<group>"; };
+		CA39FFF2222FBE4800810EA8 /* myDataGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myDataGridView.m; sourceTree = "<group>"; };
+		CA39FFF4222FC73000810EA8 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		CA39FFF5222FC73000810EA8 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		CA39FFF7222FC8DE00810EA8 /* CustomViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewModel.h; sourceTree = "<group>"; };
+		CA39FFF8222FC8DE00810EA8 /* CustomViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewModel.m; sourceTree = "<group>"; };
+		CA39FFFA222FCE7400810EA8 /* LeftTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftTableViewCell.h; sourceTree = "<group>"; };
+		CA39FFFB222FCE7400810EA8 /* LeftTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
+		CA39FFFD222FCF1600810EA8 /* LeftCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftCellModel.h; sourceTree = "<group>"; };
+		CA39FFFE222FCF1600810EA8 /* LeftCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftCellModel.m; sourceTree = "<group>"; };
+		CAF7ACE9223122A300573FE4 /* ZQHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA39FF87222F9AD400810EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA39FF9F222F9AD600810EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA39FFAA222F9AD600810EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA39FF81222F9AD400810EA8 = {
+			isa = PBXGroup;
+			children = (
+				CA39FFBF222F9BB000810EA8 /* ZQDataGridComponent */,
+				CA39FF8C222F9AD400810EA8 /* ZQDatagridComponentDemo */,
+				CA39FFA5222F9AD600810EA8 /* ZQDatagridComponentDemoTests */,
+				CA39FFB0222F9AD600810EA8 /* ZQDatagridComponentDemoUITests */,
+				CA39FF8B222F9AD400810EA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA39FF8B222F9AD400810EA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA39FF8A222F9AD400810EA8 /* ZQDatagridComponentDemo.app */,
+				CA39FFA2222F9AD600810EA8 /* ZQDatagridComponentDemoTests.xctest */,
+				CA39FFAD222F9AD600810EA8 /* ZQDatagridComponentDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA39FF8C222F9AD400810EA8 /* ZQDatagridComponentDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CA39FF8D222F9AD400810EA8 /* AppDelegate.h */,
+				CA39FF8E222F9AD400810EA8 /* AppDelegate.m */,
+				CA39FF90222F9AD400810EA8 /* ViewController.h */,
+				CA39FF91222F9AD400810EA8 /* ViewController.m */,
+				CA39FFEB222FA72500810EA8 /* DataGridViewController.h */,
+				CA39FFEC222FA72500810EA8 /* DataGridViewController.m */,
+				CA39FFEE222FB06400810EA8 /* NomalCollectionViewCell.h */,
+				CA39FFEF222FB06400810EA8 /* NomalCollectionViewCell.m */,
+				CA39FFFA222FCE7400810EA8 /* LeftTableViewCell.h */,
+				CA39FFFB222FCE7400810EA8 /* LeftTableViewCell.m */,
+				CA39FFFD222FCF1600810EA8 /* LeftCellModel.h */,
+				CA39FFFE222FCF1600810EA8 /* LeftCellModel.m */,
+				CA39FFF4222FC73000810EA8 /* CustomCollectionViewCell.h */,
+				CA39FFF5222FC73000810EA8 /* CustomCollectionViewCell.m */,
+				CA39FFF7222FC8DE00810EA8 /* CustomViewModel.h */,
+				CA39FFF8222FC8DE00810EA8 /* CustomViewModel.m */,
+				CA39FFF1222FBE4800810EA8 /* myDataGridView.h */,
+				CA39FFF2222FBE4800810EA8 /* myDataGridView.m */,
+				CA39FF93222F9AD400810EA8 /* Main.storyboard */,
+				CA39FF96222F9AD600810EA8 /* Assets.xcassets */,
+				CA39FF98222F9AD600810EA8 /* LaunchScreen.storyboard */,
+				CA39FF9B222F9AD600810EA8 /* Info.plist */,
+				CA39FF9C222F9AD600810EA8 /* main.m */,
+				CA39FFE9222F9E8000810EA8 /* PrefixHeader.pch */,
+			);
+			path = ZQDatagridComponentDemo;
+			sourceTree = "<group>";
+		};
+		CA39FFA5222F9AD600810EA8 /* ZQDatagridComponentDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA39FFA6222F9AD600810EA8 /* ZQDatagridComponentDemoTests.m */,
+				CA39FFA8222F9AD600810EA8 /* Info.plist */,
+			);
+			path = ZQDatagridComponentDemoTests;
+			sourceTree = "<group>";
+		};
+		CA39FFB0222F9AD600810EA8 /* ZQDatagridComponentDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA39FFB1222F9AD600810EA8 /* ZQDatagridComponentDemoUITests.m */,
+				CA39FFB3222F9AD600810EA8 /* Info.plist */,
+			);
+			path = ZQDatagridComponentDemoUITests;
+			sourceTree = "<group>";
+		};
+		CA39FFBF222F9BB000810EA8 /* ZQDataGridComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CA39FFE7222F9D2A00810EA8 /* UIView+Frame.h */,
+				CA39FFE6222F9D2A00810EA8 /* UIView+Frame.m */,
+				CA39FFEA222FA07B00810EA8 /* DefineFile.h */,
+				CAF7ACE9223122A300573FE4 /* ZQHeader.h */,
+				CA39FFC0222F9BB000810EA8 /* Model */,
+				CA39FFCB222F9BB000810EA8 /* View */,
+			);
+			path = ZQDataGridComponent;
+			sourceTree = "<group>";
+		};
+		CA39FFC0222F9BB000810EA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA39FFC2222F9BB000810EA8 /* ZQDataGridComponentModel.h */,
+				CA39FFC7222F9BB000810EA8 /* ZQDataGridComponentModel.m */,
+				CA39FFC8222F9BB000810EA8 /* ZQDataGridBaseCellModel.h */,
+				CA39FFC1222F9BB000810EA8 /* ZQDataGridBaseCellModel.m */,
+				CA39FFC3222F9BB000810EA8 /* ZQDataGridHeadItemModel.h */,
+				CA39FFC6222F9BB000810EA8 /* ZQDataGridHeadItemModel.m */,
+				CA39FFC9222F9BB000810EA8 /* ZQDataGridRightTableViewCellModel.h */,
+				CA39FFC4222F9BB000810EA8 /* ZQDataGridRightTableViewCellModel.m */,
+				CA39FFC5222F9BB000810EA8 /* ZQDataGridLeftTableViewCellModel.h */,
+				CA39FFCA222F9BB000810EA8 /* ZQDataGridLeftTableViewCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA39FFCB222F9BB000810EA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA39FFD2222F9BB000810EA8 /* ZQDataGridComponent.h */,
+				CA39FFD7222F9BB000810EA8 /* ZQDataGridComponent.m */,
+				CA39FFD3222F9BB000810EA8 /* ZQDataGridBaseCell.h */,
+				CA39FFCE222F9BB000810EA8 /* ZQDataGridBaseCell.m */,
+				CA39FFCC222F9BB000810EA8 /* ZQDataGridHeadItemCell.h */,
+				CA39FFD5222F9BB000810EA8 /* ZQDataGridHeadItemCell.m */,
+				CA39FFD6222F9BB000810EA8 /* ZQDataGridRightTableViewCell.h */,
+				CA39FFCF222F9BB000810EA8 /* ZQDataGridRightTableViewCell.m */,
+				CA39FFCD222F9BB000810EA8 /* ZQDataGridLeftTabelViewCell.h */,
+				CA39FFD4222F9BB000810EA8 /* ZQDataGridLeftTabelViewCell.m */,
+				CA39FFD0222F9BB000810EA8 /* ZQDataGridRowViewCollectionView.h */,
+				CA39FFD9222F9BB000810EA8 /* ZQDataGridRowViewCollectionView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA39FF89222F9AD400810EA8 /* ZQDatagridComponentDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA39FFB6222F9AD600810EA8 /* Build configuration list for PBXNativeTarget "ZQDatagridComponentDemo" */;
+			buildPhases = (
+				CA39FF86222F9AD400810EA8 /* Sources */,
+				CA39FF87222F9AD400810EA8 /* Frameworks */,
+				CA39FF88222F9AD400810EA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZQDatagridComponentDemo;
+			productName = ZQDatagridComponentDemo;
+			productReference = CA39FF8A222F9AD400810EA8 /* ZQDatagridComponentDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA39FFA1222F9AD600810EA8 /* ZQDatagridComponentDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA39FFB9222F9AD600810EA8 /* Build configuration list for PBXNativeTarget "ZQDatagridComponentDemoTests" */;
+			buildPhases = (
+				CA39FF9E222F9AD600810EA8 /* Sources */,
+				CA39FF9F222F9AD600810EA8 /* Frameworks */,
+				CA39FFA0222F9AD600810EA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA39FFA4222F9AD600810EA8 /* PBXTargetDependency */,
+			);
+			name = ZQDatagridComponentDemoTests;
+			productName = ZQDatagridComponentDemoTests;
+			productReference = CA39FFA2222F9AD600810EA8 /* ZQDatagridComponentDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA39FFAC222F9AD600810EA8 /* ZQDatagridComponentDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA39FFBC222F9AD600810EA8 /* Build configuration list for PBXNativeTarget "ZQDatagridComponentDemoUITests" */;
+			buildPhases = (
+				CA39FFA9222F9AD600810EA8 /* Sources */,
+				CA39FFAA222F9AD600810EA8 /* Frameworks */,
+				CA39FFAB222F9AD600810EA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA39FFAF222F9AD600810EA8 /* PBXTargetDependency */,
+			);
+			name = ZQDatagridComponentDemoUITests;
+			productName = ZQDatagridComponentDemoUITests;
+			productReference = CA39FFAD222F9AD600810EA8 /* ZQDatagridComponentDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA39FF82222F9AD400810EA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = zhiqing;
+				TargetAttributes = {
+					CA39FF89222F9AD400810EA8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CA39FFA1222F9AD600810EA8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CA39FF89222F9AD400810EA8;
+					};
+					CA39FFAC222F9AD600810EA8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CA39FF89222F9AD400810EA8;
+					};
+				};
+			};
+			buildConfigurationList = CA39FF85222F9AD400810EA8 /* Build configuration list for PBXProject "ZQDatagridComponentDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA39FF81222F9AD400810EA8;
+			productRefGroup = CA39FF8B222F9AD400810EA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA39FF89222F9AD400810EA8 /* ZQDatagridComponentDemo */,
+				CA39FFA1222F9AD600810EA8 /* ZQDatagridComponentDemoTests */,
+				CA39FFAC222F9AD600810EA8 /* ZQDatagridComponentDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA39FF88222F9AD400810EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA39FF9A222F9AD600810EA8 /* LaunchScreen.storyboard in Resources */,
+				CA39FF97222F9AD600810EA8 /* Assets.xcassets in Resources */,
+				CA39FF95222F9AD400810EA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA39FFA0222F9AD600810EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA39FFAB222F9AD600810EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA39FF86222F9AD400810EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA39FFFF222FCF1600810EA8 /* LeftCellModel.m in Sources */,
+				CA39FFF0222FB06400810EA8 /* NomalCollectionViewCell.m in Sources */,
+				CA39FF92222F9AD400810EA8 /* ViewController.m in Sources */,
+				CA39FFF6222FC73000810EA8 /* CustomCollectionViewCell.m in Sources */,
+				CA39FFF3222FBE4800810EA8 /* myDataGridView.m in Sources */,
+				CA39FFE3222F9BB000810EA8 /* ZQDataGridComponent.m in Sources */,
+				CA39FFED222FA72500810EA8 /* DataGridViewController.m in Sources */,
+				CA39FFE2222F9BB000810EA8 /* ZQDataGridHeadItemCell.m in Sources */,
+				CA39FFE1222F9BB000810EA8 /* ZQDataGridLeftTabelViewCell.m in Sources */,
+				CA39FFDF222F9BB000810EA8 /* ZQDataGridBaseCell.m in Sources */,
+				CA39FFDA222F9BB000810EA8 /* ZQDataGridBaseCellModel.m in Sources */,
+				CA39FFE0222F9BB000810EA8 /* ZQDataGridRightTableViewCell.m in Sources */,
+				CA39FFDB222F9BB000810EA8 /* ZQDataGridRightTableViewCellModel.m in Sources */,
+				CA39FFE8222F9D2A00810EA8 /* UIView+Frame.m in Sources */,
+				CA39FFDC222F9BB000810EA8 /* ZQDataGridHeadItemModel.m in Sources */,
+				CA39FFFC222FCE7400810EA8 /* LeftTableViewCell.m in Sources */,
+				CA39FF9D222F9AD600810EA8 /* main.m in Sources */,
+				CA39FFF9222FC8DE00810EA8 /* CustomViewModel.m in Sources */,
+				CA39FFDE222F9BB000810EA8 /* ZQDataGridLeftTableViewCellModel.m in Sources */,
+				CA39FFE5222F9BB000810EA8 /* ZQDataGridRowViewCollectionView.m in Sources */,
+				CA39FF8F222F9AD400810EA8 /* AppDelegate.m in Sources */,
+				CA39FFDD222F9BB000810EA8 /* ZQDataGridComponentModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA39FF9E222F9AD600810EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA39FFA7222F9AD600810EA8 /* ZQDatagridComponentDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA39FFA9222F9AD600810EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA39FFB2222F9AD600810EA8 /* ZQDatagridComponentDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA39FFA4222F9AD600810EA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA39FF89222F9AD400810EA8 /* ZQDatagridComponentDemo */;
+			targetProxy = CA39FFA3222F9AD600810EA8 /* PBXContainerItemProxy */;
+		};
+		CA39FFAF222F9AD600810EA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA39FF89222F9AD400810EA8 /* ZQDatagridComponentDemo */;
+			targetProxy = CA39FFAE222F9AD600810EA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA39FF93222F9AD400810EA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA39FF94222F9AD400810EA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA39FF98222F9AD600810EA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA39FF99222F9AD600810EA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA39FFB4222F9AD600810EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA39FFB5222F9AD600810EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA39FFB7222F9AD600810EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 333P62K724;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/ZQDatagridComponentDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = ZQDatagridComponentDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiqing.ZQDatagridComponentDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA39FFB8222F9AD600810EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 333P62K724;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/ZQDatagridComponentDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = ZQDatagridComponentDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiqing.ZQDatagridComponentDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA39FFBA222F9AD600810EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 333P62K724;
+				INFOPLIST_FILE = ZQDatagridComponentDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiqing.ZQDatagridComponentDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZQDatagridComponentDemo.app/ZQDatagridComponentDemo";
+			};
+			name = Debug;
+		};
+		CA39FFBB222F9AD600810EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 333P62K724;
+				INFOPLIST_FILE = ZQDatagridComponentDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiqing.ZQDatagridComponentDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZQDatagridComponentDemo.app/ZQDatagridComponentDemo";
+			};
+			name = Release;
+		};
+		CA39FFBD222F9AD600810EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 333P62K724;
+				INFOPLIST_FILE = ZQDatagridComponentDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiqing.ZQDatagridComponentDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZQDatagridComponentDemo;
+			};
+			name = Debug;
+		};
+		CA39FFBE222F9AD600810EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 333P62K724;
+				INFOPLIST_FILE = ZQDatagridComponentDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiqing.ZQDatagridComponentDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZQDatagridComponentDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA39FF85222F9AD400810EA8 /* Build configuration list for PBXProject "ZQDatagridComponentDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA39FFB4222F9AD600810EA8 /* Debug */,
+				CA39FFB5222F9AD600810EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA39FFB6222F9AD600810EA8 /* Build configuration list for PBXNativeTarget "ZQDatagridComponentDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA39FFB7222F9AD600810EA8 /* Debug */,
+				CA39FFB8222F9AD600810EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA39FFB9222F9AD600810EA8 /* Build configuration list for PBXNativeTarget "ZQDatagridComponentDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA39FFBA222F9AD600810EA8 /* Debug */,
+				CA39FFBB222F9AD600810EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA39FFBC222F9AD600810EA8 /* Build configuration list for PBXNativeTarget "ZQDatagridComponentDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA39FFBD222F9AD600810EA8 /* Debug */,
+				CA39FFBE222F9AD600810EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA39FF82222F9AD400810EA8 /* Project object */;
+}
