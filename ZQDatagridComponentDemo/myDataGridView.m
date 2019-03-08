@@ -7,7 +7,6 @@
 //
 
 #import "myDataGridView.h"
-
 @interface myDataGridView ()
 @property (nonatomic, strong) UIButton *leftTitleView;       // 左侧表头文本,用户可以自己定义需要放置什么视图。
 @end
@@ -32,17 +31,12 @@
 #pragma -mark UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [super scrollViewDidScroll:scrollView];
-    //    if(scrollView==self.rightScrollView){
-    //        CGFloat offsetX= self.rightScrollView.contentOffset.x;
-    //        if (offsetX > 0) {
-    //            self.leftVerticalLine.hidden = NO;
-    //        }
-    //    }else{
-    //        CGFloat offsetY= scrollView.contentOffset.y;
-    //        if (offsetY > 0) {
-    //            self.leftVerticalLine.hidden = NO;
-    //        }
-    //    }
+
+    if (scrollView == self.rightScrollView) {
+        CGRect rect = [self.rightTableView convertRect:self.rightTableView.bounds toView:[UIApplication sharedApplication].keyWindow];
+        self.rightTableView.mj_footer.mj_x = -rect.origin.x;
+        self.rightTableView.mj_header.mj_x = -rect.origin.x;
+    }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {

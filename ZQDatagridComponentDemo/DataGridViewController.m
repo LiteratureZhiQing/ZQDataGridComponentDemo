@@ -182,6 +182,35 @@ static NSInteger dataCount = 20;
         _dataGridView.itemClick = ^(ZQDataGridComponentClickType type, NSInteger row, NSInteger column, UIView *tagetView) {
             [weakself eventDealwithActionType:type row:row column:column tagetView:tagetView];
         };
+        
+        if (self.type == 5) {
+            
+            _dataGridView.rightTableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+                NSLog(@"下拉刷新");
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [weakself.dataGridView.rightTableView.mj_header endRefreshing];
+                });
+            }];
+            
+            _dataGridView.rightTableView.mj_footer = [MJRefreshAutoGifFooter footerWithRefreshingBlock:^{
+                NSLog(@"上拉加载");
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [weakself.dataGridView.rightTableView.mj_footer endRefreshingWithNoMoreData];
+                });
+            }];
+            
+            // 不让mj 自适应宽度
+            _dataGridView.rightTableView.mj_header.autoresizingMask = UIViewAutoresizingNone;
+             // 设置mj宽度
+            _dataGridView.rightTableView.mj_header.mj_w = SCREEN_WIDTH;
+            _dataGridView.rightTableView.mj_header.mj_x = -_dataGridView.dataModel.firstColumnWidth;
+            
+            _dataGridView.rightTableView.mj_footer.autoresizingMask = UIViewAutoresizingNone;
+            _dataGridView.rightTableView.mj_footer.mj_w = SCREEN_WIDTH;
+            _dataGridView.rightTableView.mj_footer.mj_x = -_dataGridView.dataModel.firstColumnWidth;
+        }
+        
+        
     }
     return _dataGridView;
 }
