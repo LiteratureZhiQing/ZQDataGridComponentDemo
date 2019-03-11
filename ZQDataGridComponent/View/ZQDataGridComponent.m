@@ -50,7 +50,7 @@ static NSString * leftTableReuserId = @"leftTableReuserId";
 - (CGFloat)getRightViewWidth{
     CGFloat width = 0;
     for (NSNumber * itemwidth in self.dataModel.columnWidthArray) {
-        width += itemwidth.doubleValue;
+        width += itemwidth.integerValue;
     }
     return width;
 }

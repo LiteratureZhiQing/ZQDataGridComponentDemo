@@ -58,7 +58,7 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CGFloat width = [self.dataModel.columnWidthArray[indexPath.row] floatValue];
+    NSInteger width = [self.dataModel.columnWidthArray[indexPath.row] integerValue];
     return CGSizeMake(width, self.dataModel.itemHeight);
 }
 
