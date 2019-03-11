@@ -26,6 +26,12 @@
     return self;
 }
 
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    _titleLabel.frame = CGRectMake(8, 8, self.width - 16, LYMainMidLabelHeight);
+    _lineView.frame = CGRectMake(self.width - LYLineViewHeight, 0, LYLineViewHeight, self.height);
+}
+
 - (void)setItemModel:(ZQDataGridHeadItemModel *)itemModel{
     _itemModel = itemModel;
     self.titleLabel.text = itemModel.titleString;
