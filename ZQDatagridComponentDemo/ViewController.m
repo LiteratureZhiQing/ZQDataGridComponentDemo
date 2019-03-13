@@ -63,7 +63,7 @@
 
 - (NSArray *)dataSource{
     if (!_dataSource) {
-        _dataSource = @[@"列均分",@"列自定义宽度",@"自定义左侧cell",@"自定义右侧itemcell",@"自定义右侧表头方法与itemCell一致",@"添加上拉加载，下拉刷新"];
+        _dataSource = @[@"列均分",@"列自定义宽度",@"自定义左侧cell",@"自定义右侧itemcell",@"自定义右侧表头方法与itemCell一致",@"添加上拉加载，下拉刷新",@"行高自定义,点击展开收缩单行高度"];
     }
     return _dataSource;
 }

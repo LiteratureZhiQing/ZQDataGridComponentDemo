@@ -35,6 +35,17 @@ static NSInteger dataCount = 20;
         moudle = @"头部视图";
     }else if (type == ZQDataGridComponentClickTypeLeftTab){
         moudle = @"头部左侧列表";
+        // 点击刷新 行高
+        if (self.type == 6) {
+            NSMutableArray * rowHeightArr = self.dataGridView.dataModel.rowHeightArr.mutableCopy;
+            if ([rowHeightArr[row] isEqual:@(200)]) {
+                rowHeightArr[row] = @(100);
+            }else{
+                rowHeightArr[row] = @(200);
+            }
+            self.dataGridView.dataModel.rowHeightArr = rowHeightArr.copy;
+            [self.dataGridView reloadDataRow:row];
+        }
     }else if (type == ZQDataGridComponentClickTypeRightTab){
         moudle = @"头部右侧列表";
     }
@@ -55,6 +66,10 @@ static NSInteger dataCount = 20;
     
     // 列宽数组
     NSMutableArray * columnWidthArray = [self getColumnWidthArray];
+    
+    // 行高数组
+    NSMutableArray * rowHeightArray = [[NSMutableArray alloc]init];
+    
     // 坐标数据模型数组
     NSMutableArray * leftTableDataArray = [[NSMutableArray alloc]init];
     // 右侧数据模型数组
@@ -89,6 +104,13 @@ static NSInteger dataCount = 20;
             rowModel.setDataMethodName = @"setItemModel:";
         }
         rowModel.itemModelArray = [self getItemModelArrayWithRowNum:i];
+        if (self.type == 6) {  // 行高自定义
+            if (i %2 == 0) {
+                [rowHeightArray addObject:@(140)];
+            }else{
+                 [rowHeightArray addObject:@(70)];
+            }
+        }
         [rowDataArray addObject:rowModel];
     }
     
@@ -96,7 +118,7 @@ static NSInteger dataCount = 20;
     dataModel.leftTableDataArray = leftTableDataArray;
     dataModel.rowDataArray = rowDataArray;
     dataModel.columnWidthArray = columnWidthArray;
-    
+    dataModel.rowHeightArr = rowHeightArray;
     // 自定义左侧列表cell
     if (self.type == 2) {
         dataModel.leftTableViewCellClass = @"LeftTableViewCell";

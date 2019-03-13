@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat  firstRowHeight;     // 第一行的高度
 @property (nonatomic, strong) NSArray * columnWidthArray;       // 列宽数组
 @property (nonatomic, assign) CGFloat  rowHeight;         // 行高
-@property (nonatomic,strong) NSArray *rowHeightArr;     //行高数组
+@property (nonatomic,strong)  NSArray *rowHeightArr;     //行高数组  -- 不传的话，以rowHeight 定高
 @property (nonatomic, strong) ZQDataGridRightTableViewCellModel *headDataModel;   // 上方表头数据
 @property (nonatomic, strong) NSArray *leftTableDataArray;   // 左侧方=列表头数据
 @property (nonatomic, copy) NSString *leftTableViewCellClass; // 左侧列表cell类名

@@ -22,6 +22,7 @@
         [self.contentView addSubview:self.subLabel];
         [self.contentView addSubview:self.rightLine];
         [self.contentView addSubview:self.bottomLine];
+        self.contentView.clipsToBounds = YES;
     }
     return self;
 }

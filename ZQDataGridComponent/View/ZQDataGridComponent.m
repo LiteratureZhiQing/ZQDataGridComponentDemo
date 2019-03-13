@@ -44,7 +44,7 @@ static NSString * leftTableReuserId = @"leftTableReuserId";
     _rightHeadView.frame = CGRectMake(0, 0,rightViewWidth, self.dataModel.firstRowHeight);
     _rightScrollView.contentSize = CGSizeMake(rightViewWidth, 0);
     _leftTableView.frame = CGRectMake(0, 0, self.dataModel.firstColumnWidth, self.height);
-    _rightTableView.frame = CGRectMake(0, 0,rightViewWidth, _rightScrollView.height);
+    _rightTableView.frame = CGRectMake(0, 0,rightViewWidth, self.height);
 }
 
 - (CGFloat)getRightViewWidth{
@@ -54,6 +54,19 @@ static NSString * leftTableReuserId = @"leftTableReuserId";
     }
     return width;
 }
+
+- (CGFloat)getTabelViewHeight{
+    CGFloat height = 0;
+    if (self.dataModel.rowHeightArr.count > 0) {
+        for (NSNumber * itemHeight in self.dataModel.rowHeightArr) {
+            height += itemHeight.integerValue;
+        }
+    }else{
+       height =  self.dataModel.rowHeight * self.dataModel.rowDataArray.count;
+    }
+    return height;
+}
+
 
 - (void)reloadData:(ZQDataGridComponentModel *)data{
     self.dataModel = data;
@@ -72,10 +85,16 @@ static NSString * leftTableReuserId = @"leftTableReuserId";
 
 - (void)reloadDataRow:(NSInteger)row{
     
-    [self.rightTableView beginUpdates];
-    [self.rightTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:row inSection:0]] withRowAnimation:(UITableViewRowAnimationNone)];
-    [self.rightTableView endUpdates];
+    NSIndexPath * indexPath = [NSIndexPath indexPathForRow:row inSection:0];
 
+    [self.leftTableView beginUpdates];
+    [self.leftTableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:(UITableViewRowAnimationAutomatic)];
+    [self.leftTableView endUpdates];
+    
+    [self.rightTableView beginUpdates];
+    [self.rightTableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:(UITableViewRowAnimationAutomatic)];
+    [self.rightTableView endUpdates];
+  
 }
 
 #pragma -mark UIScrollViewDelegate
@@ -109,7 +128,7 @@ static NSString * leftTableReuserId = @"leftTableReuserId";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (self.dataModel.rowHeightArr.count>indexPath.row) {
         NSNumber *height =self.dataModel.rowHeightArr[indexPath.row];
-        return  height.floatValue;
+        return  height.integerValue;
     }
     return self.dataModel.rowHeight;
 }
@@ -123,7 +142,11 @@ static NSString * leftTableReuserId = @"leftTableReuserId";
         }
         ZQDataGridRightTableViewCellModel *cellmodel =self.dataModel.rowDataArray[indexPath.row];
         cellmodel.columnWidthArray = self.dataModel.columnWidthArray;
-        cellmodel.itemHeight = self.dataModel.rowHeight;
+        CGFloat itemHeight = self.dataModel.rowHeight;
+        if (self.dataModel.rowHeightArr.count>indexPath.row)
+            itemHeight =[self.dataModel.rowHeightArr[indexPath.row] integerValue] ;
+
+        cellmodel.itemHeight = itemHeight;
         cell.dataModel = cellmodel;
         Weak(self);
         cell.itemClick = ^(NSInteger row, NSInteger column,UIView * _Nullable tagetView) {
@@ -223,11 +246,11 @@ static NSString * leftTableReuserId = @"leftTableReuserId";
     if (!_leftTableView) {
         _leftTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _leftTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _leftTableView.estimatedRowHeight = 0;
         _leftTableView.delegate = self;
         _leftTableView.dataSource = self;
         _leftTableView.showsVerticalScrollIndicator = NO;
         _leftTableView.showsHorizontalScrollIndicator = NO;
-        _leftTableView.clipsToBounds = NO;
     }
     return _leftTableView;
 }
@@ -236,6 +259,7 @@ static NSString * leftTableReuserId = @"leftTableReuserId";
     if (!_rightTableView) {
         _rightTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _rightTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _rightTableView.estimatedRowHeight = 0;
         _rightTableView.delegate = self;
         _rightTableView.dataSource = self;
         _rightTableView.showsVerticalScrollIndicator = NO;
