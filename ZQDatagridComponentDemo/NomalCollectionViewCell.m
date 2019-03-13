@@ -31,6 +31,8 @@
 - (void)setItemModel:(ZQDataGridLeftTableViewCellModel *)itemModel{
     _itemModel = itemModel;
     self.titleLabel.text = itemModel.titleString;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
 }
 
 - (UIView *)lineView{
