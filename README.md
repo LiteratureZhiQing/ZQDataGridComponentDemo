@@ -26,5 +26,5 @@ pod 'ZQDataGridComponent'
 
 具体代码参见本demo
 
-如有疑问请留言或者添加微信~~~zhiqingjay（备注GitHub上添加）
+如有疑问请Issues
 
